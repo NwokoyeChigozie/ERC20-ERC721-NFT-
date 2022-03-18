@@ -9,8 +9,8 @@ async function main() {
 
   await sleep(1500 * 60);
 
-  // await verifyContract("ChigozieToken", chigozie_token.address);
-  // await verifyContract("ChigozieNft", chigozie_nft.address);
+  await verifyContract("ChigozieToken", chigozie_token.address);
+  await verifyContract("ChigozieNft", chigozie_nft.address);
 
   console.log("current count", await chigozie_nft.tokenCounter());
 
